@@ -1,0 +1,112 @@
+body {
+  background-color: #80ced6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  padding: 75px 50px 75px 50px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  justify-items: auto;
+}
+
+#instructions {
+  padding: 0px 20px 15px 20px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    margin-right: 5%;
+    margin-left: auto;
+    padding-right: 12%;
+    padding-left: 4%;
+  }
+}
+
+#controls {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-items: auto;
+  border-radius: 25px;
+  background: #d5f4e6;
+  padding: 50px 25px 25px 25px;
+  border: 1px solid black;
+  box-shadow: 5px 10px #888888;
+  transition: box-shadow 1.0s ease;
+}
+
+#controls:hover {
+  box-shadow: 8px 12px #888888;
+}
+
+#sliders {
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+input {
+  margin-left: 15px;
+  -webkit-appearance: none;
+  width: 300px;
+  height: 15px;
+  border-radius: 5px;
+  background: #888888;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+input:hover {
+  opacity: 1;
+}
+
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #80ced6;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+input::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #80ced6;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+li {
+  list-style: none
+}
+
+button {
+  border: 1px solid black;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #80ced6;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+  color: #fefbd8;
+  box-shadow: 2px 3px #888888;
+  transition: box-shadow 0.5s ease;
+  transition: color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: #fefbd8;
+  color: #80ced6;
+  box-shadow: 4px 5px #888888;
+}
